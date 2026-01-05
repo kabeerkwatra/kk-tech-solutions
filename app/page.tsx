@@ -138,7 +138,7 @@ export default function Home() {
           
           {/* Copyright */}
           <div className="text-slate-500 text-sm">
-            {new Date().getFullYear()} KK Tech Solutions. All rights reserved.
+            {new Date().getFullYear()} KK Tech Solutions.
           </div>
 
           {/* Legal Links */}
