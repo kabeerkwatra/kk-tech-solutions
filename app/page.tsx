@@ -132,9 +132,28 @@ export default function Home() {
       </section>
 
       {/* --- Footer --- */}
-      <footer className="bg-slate-950 border-t border-slate-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500">
-          <p>{new Date().getFullYear()} KK Tech Solutions.</p>
+      {/* --- Footer --- */}
+      <footer className="bg-slate-950 border-t border-slate-800 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          
+          {/* Copyright */}
+          <div className="text-slate-500 text-sm">
+            {new Date().getFullYear()} KK Tech Solutions. All rights reserved.
+          </div>
+
+          {/* Legal Links */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
+            <Link href="/terms" className="text-slate-400 hover:text-sky-400 transition">
+              Terms & Conditions
+            </Link>
+            <Link href="/privacy" className="text-slate-400 hover:text-sky-400 transition">
+              Privacy Policy
+            </Link>
+            <Link href="/refund" className="text-slate-400 hover:text-sky-400 transition">
+              Refund Policy
+            </Link>
+          </div>
+
         </div>
       </footer>
     </div>
